@@ -69,7 +69,8 @@ def main():
 
 def get_df():
     """Returns the provided model_outcome data in a Pandas dataframe"""
-    model_outcome_df = pd.read_csv("sample_data.txt")
+    url = 'https://raw.githubusercontent.com/aMetallurgist/generate_pdf_report/master/sample_data.txt'
+    model_outcome_df = pd.read_csv(url, index_col=0)
     return model_outcome_df
 
 
